@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Hair Product Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, ul, nav {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3; /* Light gray background */
+        }
+
+        header {
+            background-color: #61a6b4; /* Soft blue-green background */
+            color: #fff; /* White text color */
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #86c5da; /* Light blue-green background */
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a:hover {
+            background-color: #a0d0e4; /* Lighter blue-green on hover */
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        section.product-management {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form#product-form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #61a6b4; /* Match the header color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #86c5da; /* Match the navigation color */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section.newsletter {
+            background-color: #f0e68c; /* Pale gold background */
+            color: #333; /* Dark text color */
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Admin</h1>
+    </header>
+
+    <section class="product-management">
+        <h2>Product Management</h2>
+
+        <!-- Form to edit a product -->
+        <form action="https://formspree.io/f/myyqlapq" method="POST" id="product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" value="Hair Product 1" required>
+
+            <label for="product-price">Price:</label>
+            <input type="text" id="product-price" name="product-price" value="$19.99" required>
+
+            <label for="product-description">Description:</label>
+            <textarea id="product-description" name="product-description" required>High-quality hair product for all hair types.</textarea>
+
+            <label for="product-quality">Quality:</label>
+            <select id="product-quality" name="product-quality">
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+            </select>
+
+            <button type="submit">Update Product</button>
+        </form>
+    </section>
+
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Stay updated with our latest hair products and offers.</p>
+        <form action="https://formspree.io/f/myyqlapq" method="POST">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            <br><br>
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hair Product Store - Your Online Hair Product Shop</p>
+    </footer>
+</body>
+</html>
