@@ -3,105 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/">
-    <style>
-        /* Add your CSS styles here */
-        header {
-            background-color: #61a6b4; /* Soft blue-green background */
-            color: #fff; /* White text color */
-            text-align: center;
-            padding: 20px;
-        }    /* Body and background styles */
-    /* Reset some default browser styles */
-    header {
-            background-color: #61a6b4; /* Soft blue-green background */
-            color: #fff; /* White text color */
-            text-align: center;
-            padding: 20px;
-        }
-    body, h1, h2, ul, nav {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f3f3f3; /* Light gray background */
-        }
-    nav {
-        background-color: #333;
-        color: white;
-        text-align: center;
-    }
-    /* Navigation menu styles */
-   
-    nav {
-            background-color: #86c5da; /* Light blue-green background */
-            display: flex;
-            justify-content: space-around;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav a:hover {
-            background-color: #a0d0e4; /* Lighter blue-green on hover */
-        }
-
-        nav li {
-            margin: 0 10px;
-        }
-
-    nav a:hover {
-        text-decoration: underline;
-    }
-    /* Section styles */
-    section {
-        padding: 20px;
-    }
-    h2 {
-        font-size: 18px;
-        color:blue;
-        text-align: center; /* Bright yellow color */
-    }
-    p {
-        font-size: 16px;
-    }
-        footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    footer {
-            background-color: #86c5da; /* Match the navigation color */
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        @media(max-width:700px){
-            nav,article {
-                width: 100px;
-                height: 100%;
-            }
-        }
-
-
-        section.newsletter {
-            background-color: #f0e68c; /* Pale gold background */
-            color: #333; /* Dark text color */
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Afro Naturals</title>
-</head>'
+</head>
+
 
 <body>
     <header>
@@ -117,7 +24,7 @@
         <h1>About Us</h1>
 
     </header>
-    <section>
+    <section class="sect">
         <h2>- Afro Naturals</h2><br>
         <p>
             At Afro Naturals, we are passionate about promoting healthy, vibrant afro hair while also respecting our planet.
@@ -155,4 +62,6 @@
         <p>&copy; Afro Naturals</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>

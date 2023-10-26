@@ -2,174 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="style.css"> <!-- Your custom CSS file -->
     <title>Document</title>
-    <style>
-        /* Add a border to the images and center them */
-        /* Add a border to the images and reduce their size */
-        .hair {
-            text-align: center;
-            padding: 10px; /* Add some padding to the image container */
-        }
-
-        /* Style the images to reduce their size */
-        .hair img {
-            max-width: 200px; /* Set the maximum width for the images */
-        }
-
-        /* Style the buttons */
-        .hair button {
-            background-color: #4CAF50; /* Green background color */
-            color: white; /* White text color */
-            padding: 5px 10px; /* Add padding to the button */
-            cursor: pointer; /* Add a pointer cursor on hover */
-        }
-
-        /* Center the button horizontally */
-        .hair button {
-            margin: 0 auto;
-            display: block;
-        }
-          .hair {
-        text-align: center;
-        padding: 10px; /* Add some padding to the image container */
-    }
-
-    /* Style the images to reduce their size */
-    .hair img {
-        max-width: 200px; /* Set the maximum width for the images */
-        border: none; /* Remove the border from the images */
-        padding: 0; /* Remove padding from the images */
-    }
-
-    /* Style the buttons */
-    .hair button {
-        background-color: #4CAF50; /* Green background color */
-        color: white; /* White text color */
-        padding: 5px 10px; /* Add padding to the button */        cursor: pointer; /* Add a pointer cursor on hover */
-    }
-
-    /* Center the button horizontally */
-    .hair button {
-        margin: 0 auto;
-        display: block;
-    }
-    nav{
-            flex:1;
-            align-items: center;
-            padding: 20px;
-            display:flex;
-            justify-content: end;
-        }
-        ul{
-            width:50%;
-        }
-        nav ul{
-            display: inline-block;
-            list-style-type:none;
-        }
-        nav ul li {
-            display: inline-block;
-            margin-right: none;
-
-        }
-        a{
-            text-decoration: none;
-            color: salmon;
-        }
-        .nav a {
-            text-align: right;
-            display:inline-block;
-            padding:10px
-        }
-        body{
-           background-image: url(istock.jpg);
-           background-size:cover;
-          
-          
-        
-
-
-
-        }
-   
-</style>
-    </style>
-    
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="admin.html">Admin</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Add Bootstrap navbar styles -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1 style="color:lightsalmon;"><b><em>Poducts!</em></b></h1>
+        <h1 style="color: lightsalmon;"><b><em>Products!</em></b></h1>
     </header>
 </section>
 
 <section class="about">
-            <p style="color:darkslategray;"><i>Experience Natural, Permanent Hair Restoration. Renew Your Look and Confidence with our newest products.</i></p>
-    </section>
-    <section>
-        <h2 style="color:gray;"><u>Featured Products</u></h2>
-        <div class="hair">
-            <div class="hair">
-                <img src="/Pictures/picture1.jpg" alt="Hair food">
-                <h3> Botanics</h3>
-                <p><i>Botanics hair growth products are formulated to promote healthy hair growth, reduce hair loss, improve hair health, and address specific issues like dandruff or oiliness. They often contain nourishing ingredients, such as vitamins, minerals, and botanical extracts, to strengthen hair, thicken strands, and encourage new growth. Individual results may vary</i></p>
-                <p>Price: $19.99</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="afro">
-                <img src="/Pictures/pictures3.png" alt="Moisturise">
-                <h3> Afro Botanics Enhanced conditioning Moisture</h3>
-                <p><em> Improving Hair Health: Healthy hair is more likely to grow well. Hair growth products can include ingredients that nourish and hydrate the scalp and hair, making them less prone to damage and breakage.</em>
-                                   </p>
-                <p>Price: $15.99</p>
-                <button>Add to Cart</button>
-            
+    <p style="color: darkslategray;"><i>Experience Natural, Permanent Hair Restoration. Renew Your Look and Confidence with our newest products.</i></p>
+</section>
+<section class="sect">
+    <h2 style="color: gray;"><u>Featured Products</u></h2>
+    <div class="row">
+        <div class="col-md-6">
+            <img style="width:200px" src="/Pictures/picture1.jpg" alt="Hair food">
+            <h3>Botanics</h3>
+            <p><i>Botanics hair growth products are formulated to promote healthy hair growth, reduce hair loss, improve hair health, and address specific issues like dandruff or oiliness. They often contain nourishing ingredients, such as vitamins, minerals, and botanical extracts, to strengthen hair, thicken strands, and encourage new growth. Individual results may vary</i></p>
+            <p>Price: $19.99</p>
+            <button class="btn btn-primary">Add to Cart</button>
         </div>
-        <div class="Bun">
-            <img src="/Pictures/picture4.png" alt="Moisturise">
-            <h3> Afro Botanics Deep conditioner and hair treatment</h3>
-            <p><i>Thickening and Strengthening: Some products aim to increase hair thickness and strength. These products may contain proteins and other compounds that fortify the hair shaft.
-
-                Addressing Specific Hair Issues: Some hair growth products are formulated to address specific issues like dandruff, oily scalp, or other conditions that can affect hair growth.</i>
-                                <p>Price: $15.99</p>
-            <button>Add to Cart</button>
-        
+        <div class="col-md-6">
+            <img style="width:200px" src="/Pictures/pictures3.png" alt="Moisturize">
+            <h3>Afro Botanics Enhanced conditioning Moisture</h3>
+            <p><em>Improving Hair Health: Healthy hair is more likely to grow well. Hair growth products can include ingredients that nourish and hydrate the scalp and hair, making them less prone to damage and breakage.</em></p>
+            <p>Price: $15.99</p>
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+        <div>
+        <img style="width:200px" src="/Pictures/picture4.png" alt="Moisturise">
+        <h3> Afro Botanics Deep conditioner and hair treatment</h3>
+        <p><br>Thickening and Strengthening: Some products aim to increase hair thickness and strength. <br>These products may contain proteins and other compounds that fortify the hair shaft.</br></i></p>
+        <p>Price: $15.99</p>
+            <button id="btn" class="btn btn-primary">Add to Cart</button>
     </div>
-            <div class="curly">
-                <img src="/Pictures/picture2.jpg" alt="Moisturise">
-                <h3> Black Peal Enhanced Moisture</h3>
-                <p><em> Reducing Hair Loss: Some hair growth products are designed to minimize hair loss by strengthening existing hair and preventing premature shedding. They may contain ingredients that help to anchor hair follicles more securely in the scalp.</em>
-                   
-                </p>
-                <button>Add to Cart</button>
-                <p>Price: $24.99</p>
 
+            <div class="curly">
+                <img style="width:200px" src="/Pictures/picture2.jpg" alt="Moisturise">
+                <h3> Black Peal Enhanced Moisture</h3>
+                 <p><em> Reducing Hair Loss: Some hair growth products are designed to minimize hair loss by strengthening existing hair and preventing premature shedding. <br>They may contain ingredients that help to anchor hair follicles more securely in the scalp.</br></em>
+                    <p>Price: $24.99</p> 
+                <button class="btn btn-primary">Add to Cart</button>
+                
             </div>
             <div class="product">
-                <img src="/Pictures/Bouclmeme.webp" alt="Moisturise">
+                <img style="width:200px" src="/Pictures/Bouclmeme.webp" alt="Moisturise">
                 <h3>Curly hair</h3>
                 <p><i> We understand the needs of curly hair. The Bouclème range is natural, silicone, sulphate & paraben free.</i>
-                   
                 </p>
-                <button>Add to Cart</button>
                 <p>Price: $34.99</p>
-                <div class="product">
-                    <img src="/Pictures/Rosebrook.webp" alt="Moisturise">
-                    <h3>Hair growth</h3>
-                    <p><em> High-performance hair products made from organic and certified organic ingredients for all hair and scalp types and textures including dry, oily and frizzy,includes scalp healing and follicle stimulating herbal infusions and vital nutrients creating potent Synergy encouraging scalp health and continued hair growth.</em>
-                
-                    </p>
-                    <button>Add to Cart</button>
-                    <p>Price: $40.99</p>
-                
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img style="width:200px" src="/Pictures/Rosebrook.webp" alt="Moisturise">
+                <h3>Hair growth</h3>
+                <p><em> High-performance hair products made from organic and certified organic ingredients for all hair 
+                    and scalp types and textures including dry, 
+                    oily and frizzy,includes scalp healing and follicle stimulating herbal infusions and vital nutrients creating potent Synergy encouraging scalp health and continued hair growth.</em>
+                </p>
+                <p>Price: $40.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+
+
+        <!-- Add other product sections similarly -->
+    </div>
+</section>
 </body>
 </html>
